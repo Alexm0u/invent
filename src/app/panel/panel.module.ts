@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PanelRoutingModule } from './panel-routing.module';
 import { PackagePageComponent } from './pages/package-page/package-page.component';
-import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
+import { LayoutPageComponent } from './pages/panel-page/panel-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { SendPageComponent } from './pages/send-page/send-page.component';
