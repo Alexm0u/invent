@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutPageComponent } from './pages/panel-page/panel-page.component';
+import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { CompaniesPageComponent } from './pages/companies-page/companies-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { PackagePageComponent } from './pages/package-page/package-page.component';
@@ -10,7 +10,7 @@ import { UsersPageComponent } from './pages/users-page/users-page.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutPageComponent,
+    component: PanelPageComponent,
     children: [
       {
         path: 'companies',
@@ -37,12 +37,20 @@ const routes: Routes = [
         component:SendPageComponent,
       },
       {
+        path: 'new-send',
+        component:SendPageComponent,
+      },
+      {
+        path: 'del-send',
+        component:SendPageComponent,
+      },
+      {
         path: 'users',
         component: UsersPageComponent,
       },
       {
         path: 'panel',
-        component: LayoutPageComponent,
+        component: PanelPageComponent,
       },
       {
         path: ':id',

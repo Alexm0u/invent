@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './panel-page.component.html',
   styleUrls: ['./panel-page.component.css']
 })
-export class LayoutPageComponent {
+export class PanelPageComponent {
 
 }
