@@ -19,9 +19,9 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'panel',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
-  {path: '**', redirectTo:'404'}
+  { path: '**', redirectTo: '404' },
 ];
 
 @NgModule({
