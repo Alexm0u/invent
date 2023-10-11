@@ -8,7 +8,7 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { SendPageComponent } from './pages/send-page/send-page.component';
 import { CompaniesPageComponent } from './pages/companies-page/companies-page.component';
-import { PanelPageComponent } from './pages/layout-page/layout-page.component';
+import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { MainPanelPageComponent } from './pages/main-panel-page/main-panel-page.component';
 
 
