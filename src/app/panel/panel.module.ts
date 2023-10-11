@@ -11,6 +11,7 @@ import { CompaniesPageComponent } from './pages/companies-page/companies-page.co
 import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { MenuPageComponent } from './pages/menu-page/menu-page.component';
 import { MainPanelPageComponent } from './pages/main-panel-page/main-panel-page.component';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MainPanelPageComponent } from './pages/main-panel-page/main-panel-page.
     SendPageComponent,
     CompaniesPageComponent,
     MenuPageComponent,
-    MainPanelPageComponent
+    MainPanelPageComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
