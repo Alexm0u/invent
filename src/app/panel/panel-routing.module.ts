@@ -6,6 +6,7 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { PackagePageComponent } from './pages/package-page/package-page.component';
 import { SendPageComponent } from './pages/send-page/send-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
+import { MenuPageComponent } from './pages/menu-page/menu-page.component';
 
 const routes: Routes = [
   {
@@ -49,8 +50,8 @@ const routes: Routes = [
         component: UsersPageComponent,
       },
       {
-        path: 'panel',
-        component: PanelPageComponent,
+        path: 'menu',
+        component: MenuPageComponent,
       },
       {
         path: ':id',
@@ -58,7 +59,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        redirectTo: 'panel',
+        redirectTo: 'menu',
       },
     ],
   },

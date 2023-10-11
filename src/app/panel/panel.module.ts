@@ -8,6 +8,8 @@ import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { SendPageComponent } from './pages/send-page/send-page.component';
 import { CompaniesPageComponent } from './pages/companies-page/companies-page.component';
 import { PanelPageComponent } from './pages/panel-page/panel-page.component';
+import { MenuPageComponent } from './pages/menu-page/menu-page.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { PanelPageComponent } from './pages/panel-page/panel-page.component';
     ListPageComponent,
     UsersPageComponent,
     SendPageComponent,
-    CompaniesPageComponent
+    CompaniesPageComponent,
+    MenuPageComponent,
   ],
   imports: [
     CommonModule,
-    PanelRoutingModule
+    PanelRoutingModule,
+    MaterialModule
   ]
 })
 export class PanelModule { }
