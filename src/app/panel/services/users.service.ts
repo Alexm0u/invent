@@ -9,7 +9,7 @@ export class UsersService {
   private baseUrl: string = environtments.baseUrl;
   constructor(private http: HttpClient) {}
 
-  getCompanies(): Observable<User[]> {
+  getUsers(): Observable<User[]> {
     return this.http.get<User[]>(`${this.baseUrl}/users`);
   }
 }

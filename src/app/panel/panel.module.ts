@@ -12,6 +12,7 @@ import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { MenuPageComponent } from './pages/menu-page/menu-page.component';
 import { MainPanelPageComponent } from './pages/main-panel-page/main-panel-page.component';
 import { CardComponent } from './components/card/card.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { CardComponent } from './components/card/card.component';
     CompaniesPageComponent,
     MenuPageComponent,
     MainPanelPageComponent,
-    CardComponent
+    CardComponent,
+    UserListComponent
   ],
   imports: [
     CommonModule,
