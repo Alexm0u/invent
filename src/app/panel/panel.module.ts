@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from '../material/material.module';
 
 import { PanelRoutingModule } from './panel-routing.module';
 import { PackagePageComponent } from './pages/package-page/package-page.component';
@@ -21,7 +22,8 @@ import { PanelPageComponent } from './pages/panel-page/panel-page.component';
   ],
   imports: [
     CommonModule,
-    PanelRoutingModule
+    PanelRoutingModule,
+    MaterialModule
   ]
 })
 export class PanelModule { }
