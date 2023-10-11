@@ -50,8 +50,8 @@ const routes: Routes = [
         component: UsersPageComponent,
       },
       {
-        path: 'menu',
-        component: MenuPageComponent,
+        path: 'panel',
+        component: PanelPageComponent,
       },
       {
         path: ':id',
@@ -59,7 +59,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        redirectTo: 'menu',
+        redirectTo: 'panel'
       },
     ],
   },

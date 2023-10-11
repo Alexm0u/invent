@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PanelPageComponent {
 
+  public sidebarItems = [
+    { label: 'Tipos de paquete', icon: 'label', url: './package'},
+    { label: 'Admin/Trabajadores', icon: 'label', url: './users'},
+    { label: 'Envíos registrados', icon: 'label', url: './send'},
+    { label: 'Empresas externas transporte', icon: 'label', url: './companies'},
+  ]
+
 }
