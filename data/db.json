@@ -59,8 +59,8 @@
     "users": [
       {
         "id": 1,
-        "username": "user1",
-        "email": "user1@example.com",
+        "username": "Alex",
+        "email": "alex@gmail.com",
         "role": "admin"
       },
       {
