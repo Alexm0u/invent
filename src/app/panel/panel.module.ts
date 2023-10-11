@@ -10,6 +10,7 @@ import { SendPageComponent } from './pages/send-page/send-page.component';
 import { CompaniesPageComponent } from './pages/companies-page/companies-page.component';
 import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { MenuPageComponent } from './pages/menu-page/menu-page.component';
+import { MainPanelPageComponent } from './pages/main-panel-page/main-panel-page.component';
 
 
 @NgModule({
@@ -21,13 +22,14 @@ import { MenuPageComponent } from './pages/menu-page/menu-page.component';
     SendPageComponent,
     CompaniesPageComponent,
     MenuPageComponent,
+    MainPanelPageComponent
   ],
   imports: [
     CommonModule,
     PanelRoutingModule,
     MaterialModule,
     PanelRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class PanelModule { }
