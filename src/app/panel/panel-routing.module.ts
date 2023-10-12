@@ -32,10 +32,6 @@ const routes: Routes = [
         component: ListPageComponent,
       },
       {
-        path: 'package',
-        component: PackagePageComponent,
-      },
-      {
         path: 'send',
         component:SendPageComponent,
       },
