@@ -1,1 +1,8 @@
-<p>send-page works!</p>
+<h1>Listado de envíos</h1>
+<mat-divider></mat-divider>
+
+<div class="grid mb-8 pt-2">
+  <div *ngFor="let send of sends">
+    <sends-send-list [send]="send"></sends-send-list>
+  </div>
+</div>

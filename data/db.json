@@ -76,12 +76,11 @@
       "role": "worker"
     }
   ],
-  "shipments": [
+  "sends": [
     {
       "id": 1,
       "packageType": 2,
       "weight": 0.15,
-      "recipient": "Recipient 1",
       "destinationPostalCode": 15000,
       "companyId": 1
     },
@@ -89,7 +88,6 @@
       "id": 2,
       "packageType": 4,
       "weight": 7.5,
-      "recipient": "Recipient 2",
       "destinationPostalCode": 22000,
       "companyId": 2
     },
@@ -97,7 +95,6 @@
       "id": 3,
       "packageType": 1,
       "weight": 0.05,
-      "recipient": "Recipient 3",
       "destinationPostalCode": 18000,
       "companyId": 1
     },
@@ -105,7 +102,6 @@
       "id": 4,
       "packageType": 3,
       "weight": 3.0,
-      "recipient": "Recipient 4",
       "destinationPostalCode": 21000,
       "companyId": 2
     },
@@ -113,7 +109,6 @@
       "id": 5,
       "packageType": 5,
       "weight": 20.0,
-      "recipient": "Recipient 5",
       "destinationPostalCode": 23000,
       "companyId": 3
     }

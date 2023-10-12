@@ -9,7 +9,7 @@ export class SendService {
   private baseUrl: string = environtments.baseUrl;
   constructor(private http: HttpClient) {}
 
-  getCompanies(): Observable<Send[]> {
-    return this.http.get<Send[]>(`${this.baseUrl}/shipments`);
+  getSends(): Observable<Send[]> {
+    return this.http.get<Send[]>(`${this.baseUrl}/sends`);
   }
 }
