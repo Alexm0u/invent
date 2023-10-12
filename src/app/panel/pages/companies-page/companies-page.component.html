@@ -1,1 +1,10 @@
-<p>companies-page works!</p>
+<h1>Empresas de transporte</h1>
+<mat-divider></mat-divider>
+
+<div class="p-grid mb-8 pt-2">
+  <ng-container *ngFor="let company of companies">
+    <div class="p-col-12 p-sm-6 p-md-4 p-lg-3 p-xl-2">
+      <company-companies-list [company]="company"></company-companies-list>
+    </div>
+  </ng-container>
+</div>

@@ -14,6 +14,7 @@ import { MainPanelPageComponent } from './pages/main-panel-page/main-panel-page.
 import { CardComponent } from './components/card/card.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { SendListComponent } from './components/send-list/send-list.component';
+import { CompaniesListComponent } from './components/companies-list/companies-list.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { SendListComponent } from './components/send-list/send-list.component';
     MainPanelPageComponent,
     CardComponent,
     UserListComponent,
-    SendListComponent,],
+    SendListComponent,
+    CompaniesListComponent,],
   imports: [
     CommonModule,
     PanelRoutingModule,
