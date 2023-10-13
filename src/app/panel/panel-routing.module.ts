@@ -6,6 +6,8 @@ import { SendsPageComponent } from './pages/send-page/send-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { LoginPageComponent } from '../auth/pages/login-page/login-page.component';
+import { EditCompPageComponent } from './pages/edit-comp-page/edit-comp-page.component';
+import { AddCompPageComponent } from './pages/add-comp-page/add-comp-page.component';
 
 const routes: Routes = [
   {
@@ -17,12 +19,12 @@ const routes: Routes = [
         component: CompaniesPageComponent,
       },
       {
-        path: 'new-company',
-        component: CompaniesPageComponent,
+        path: 'add-comp',
+        component: AddCompPageComponent,
       },
       {
-        path: 'edit-company/:id',
-        component: CompaniesPageComponent,
+        path: 'edit/:id',
+        component: EditCompPageComponent,
       },
       {
         path: 'list',
@@ -45,13 +47,13 @@ const routes: Routes = [
         component: UsersPageComponent,
       },
       {
-        path: '**',
-        component: CompaniesPageComponent,
-      },
-      {
         path: ':id',
         component: CompaniesPageComponent,
       },
+      {
+        path: '**',
+        redirectTo: 'list',
+      }
     ],
   },
 ];

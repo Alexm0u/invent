@@ -5,10 +5,14 @@
     </mat-card-header>
     <mat-card-content class="mt-2">
       <h4>Peso:</h4>
-      <mat-card-subtitle>Códigos Postales de envío: {{ company.postalCodes }} Kg</mat-card-subtitle>
+      <mat-card-subtitle>Códigos Postales de envío: {{ company.postalCodes }}</mat-card-subtitle>
     </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <button mat-button mat-raised color="primary" [routerLink]="['edit', company.id]"><mat-icon>edit</mat-icon>Editar</button>
+      
+    </mat-card-actions>
   </mat-card>
-  
   
   
   

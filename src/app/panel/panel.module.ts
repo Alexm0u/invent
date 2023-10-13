@@ -12,7 +12,8 @@ import { CardComponent } from './components/card/card.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { SendListComponent } from './components/send-list/send-list.component';
 import { CompaniesListComponent } from './components/companies-list/companies-list.component';
-
+import { EditCompPageComponent } from './pages/edit-comp-page/edit-comp-page.component';
+import { AddCompPageComponent } from './pages/add-comp-page/add-comp-page.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,16 @@ import { CompaniesListComponent } from './components/companies-list/companies-li
     CardComponent,
     UserListComponent,
     SendListComponent,
-    CompaniesListComponent,],
+    CompaniesListComponent,
+    EditCompPageComponent,
+    AddCompPageComponent,
+  ],
   imports: [
     CommonModule,
     PanelRoutingModule,
     MaterialModule,
     PanelRoutingModule,
     MaterialModule,
-  ]
+  ],
 })
-export class PanelModule { }
+export class PanelModule {}
