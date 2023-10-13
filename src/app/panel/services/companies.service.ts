@@ -28,14 +28,12 @@ export class CompaniesService {
     );
   }
   deleteCompanyById(id: string): Observable<boolean> {
-    return this.http
-      .delete(`${this.baseUrl}/companies/${id}`)
-      .pipe(
-        catchError((err) => {
-          console.error('Error during deletion:', err);
-          return of(false);
-        }),
-        map(resp => true)
-      );
+    return this.http.delete(`${this.baseUrl}/companies/${id}`).pipe(
+      catchError((err) => {
+        console.error('Error during deletion:', err);
+        return of(false);
+      }),
+      map((resp) => true)
+    );
   }
 }
