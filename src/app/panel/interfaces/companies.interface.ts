@@ -1,6 +1,8 @@
 export interface Company {
     id:              number;
     name:            string;
+    direction:       string;
+    phone:           string;
     postalCodes:     number[];
 }
 

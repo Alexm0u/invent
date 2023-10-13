@@ -1,11 +1,12 @@
 <mat-card>
-    <mat-card-header>
+    <mat-card-header class="flex justify-content-center">
       <mat-card-title> {{ company.name }} </mat-card-title>
-      <mat-card-subtitle> ID: {{ company.id }} </mat-card-subtitle>
+      <mat-card-subtitle> {{ company.direction }} </mat-card-subtitle>
+      <mat-card-subtitle> Contacto: {{ company.phone }} </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content class="mt-2">
-      <h4>Peso:</h4>
-      <mat-card-subtitle>Códigos Postales de envío: {{ company.postalCodes }}</mat-card-subtitle>
+      <h4>Códigos postales de envío:</h4>
+      <mat-card-subtitle>{{ company.postalCodes }}</mat-card-subtitle>
     </mat-card-content>
     <mat-divider></mat-divider>
     <mat-card-actions>
