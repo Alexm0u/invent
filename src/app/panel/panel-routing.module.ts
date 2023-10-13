@@ -20,7 +20,7 @@ const routes: Routes = [
       },
       {
         path: 'add-comp',
-        component: AddCompPageComponent,
+        component: EditCompPageComponent,
       },
       {
         path: 'edit/:id',
