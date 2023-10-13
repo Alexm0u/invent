@@ -4,10 +4,8 @@ import { CompaniesPageComponent } from './pages/companies-page/companies-page.co
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { SendsPageComponent } from './pages/send-page/send-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
-import { MenuPageComponent } from './pages/menu-page/menu-page.component';
 import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { LoginPageComponent } from '../auth/pages/login-page/login-page.component';
-import { MainPanelPageComponent } from './pages/main-panel-page/main-panel-page.component';
 
 const routes: Routes = [
   {
@@ -48,7 +46,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        component: MainPanelPageComponent,
+        component: CompaniesPageComponent,
       },
       {
         path: ':id',
