@@ -1,5 +1,6 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="push" [ngStyle]="{ widht: '250px' }">
+  <mat-sidenav #sidenav mode="push" [ngStyle]="{ widht: '250px' }"
+  >
     <mat-toolbar>
       <span>Menú</span>
       <span class="spacer"></span>
@@ -24,7 +25,7 @@
     <button mat-button>Logout</button>
   </mat-toolbar>
 
-  <div class="container p-2">
+  <div class="container flex p-2">
     <router-outlet></router-outlet>
 
   </div>

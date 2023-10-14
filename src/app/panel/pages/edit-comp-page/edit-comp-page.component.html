@@ -1,20 +1,31 @@
 <h1>Editar / Agregar Empresa</h1>
 <mat-divider class="mb-2"></mat-divider>
 
-<div class="p-grid p-flex-column">
-  <div class="p-col-12 p-sm-6">
-    <mat-card>
+
+    <mat-card class="flex">
       <mat-card-content>
-        <div class="p-grid">
-          <div class="p-col-12 p-sm-6">
+        <div class="p-grid p-dir-col p-gap">
+          <div class="p-col-12">
             <mat-form-field>
               <mat-label>Nombre empresa</mat-label>
               <input matInput type="text" required />
             </mat-form-field>
           </div>
-          <div class="p-col-12 p-sm-6">
+          <div class="p-col-12">
             <mat-form-field>
-              <mat-label>Código postal</mat-label>
+              <mat-label>Dirección</mat-label>
+              <input matInput type="text" required />
+            </mat-form-field>
+          </div>
+          <div class="p-col-12">
+            <mat-form-field>
+              <mat-label>Contacto</mat-label>
+              <input matInput type="text" required />
+            </mat-form-field>
+          </div>
+          <div class="p-col-12">
+            <mat-form-field>
+              <mat-label>Código Postal envío</mat-label>
               <input matInput type="text" required />
             </mat-form-field>
           </div>
@@ -27,5 +38,4 @@
         
       </mat-card-content>
     </mat-card>
-  </div>
-</div>
+
