@@ -14,6 +14,7 @@ import { SendListComponent } from './components/send-list/send-list.component';
 import { CompaniesListComponent } from './components/companies-list/companies-list.component';
 import { EditCompPageComponent } from './pages/edit-comp-page/edit-comp-page.component';
 import { AddCompPageComponent } from './pages/add-comp-page/add-comp-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,7 @@ import { AddCompPageComponent } from './pages/add-comp-page/add-comp-page.compon
     CommonModule,
     PanelRoutingModule,
     MaterialModule,
-    PanelRoutingModule,
-    MaterialModule,
+    ReactiveFormsModule
   ],
 })
 export class PanelModule {}
