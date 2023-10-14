@@ -5,7 +5,13 @@
       "name": "Correos",
       "direction": "Calle Real, 123",
       "phone": "67584935",
-      "postalCodes": [15000, 16000, 17000, 18000, 19000],
+      "postalCodes": [
+        15000,
+        16000,
+        17000,
+        18000,
+        19000
+      ],
       "shippingCompany": "Correos"
     },
     {
@@ -13,7 +19,14 @@
       "name": "Seur",
       "direction": "Calle Hipotética, 123",
       "phone": "645768421",
-      "postalCodes": [20000, 21000, 22000, 23000, 24000, 25000]
+      "postalCodes": [
+        20000,
+        21000,
+        22000,
+        23000,
+        24000,
+        25000
+      ]
     },
     {
       "id": 3,
@@ -21,6 +34,13 @@
       "phone": "Usan telégrafo",
       "direction": "Calle Falsa, 123",
       "postalCodes": []
+    },
+    {
+      "id": 4,
+      "name": "Carmenship",
+      "direction": "Rusafa 34",
+      "phone": "657890123",
+      "postalCodes": "98004"
     }
   ],
   "packageTypes": [
@@ -108,7 +128,7 @@
     {
       "id": 4,
       "packageType": 3,
-      "weight": 3.0,
+      "weight": 3,
       "recipient": "Recipient 4",
       "destinationPostalCode": 21000,
       "companyId": 2
@@ -116,7 +136,7 @@
     {
       "id": 5,
       "packageType": 5,
-      "weight": 20.0,
+      "weight": 20,
       "recipient": "Recipient 5",
       "destinationPostalCode": 23000,
       "companyId": 3
