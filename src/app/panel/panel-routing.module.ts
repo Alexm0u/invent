@@ -47,10 +47,6 @@ const routes: Routes = [
         component: UsersPageComponent,
       },
       {
-        path: ':id',
-        component: CompaniesPageComponent,
-      },
-      {
         path: '**',
         redirectTo: 'list',
       }
