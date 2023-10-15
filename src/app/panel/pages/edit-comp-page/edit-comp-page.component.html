@@ -1,4 +1,4 @@
-<h1>Editar / Agregar Empresa</h1>
+<h1>{{currentCompany.id? 'Editar' : 'Agregar'}} Empresa</h1>
 <mat-divider class="mb-2"></mat-divider>
 
 
@@ -31,11 +31,11 @@
           </div>
         </form>
         <div class="flex justify-content-between">
-            <button mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button>
-        <span class="spacer"></span>
+            <button *ngIf="currentCompany.id" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button>
+        <span></span>
         <button mat-flat-button color="primary" (click)="onSubmit()"><mat-icon>save</mat-icon>Guardar</button>
         </div>
-<pre>{{currentCompany | json}}</pre>
+
         
         
       </mat-card-content>
