@@ -2,9 +2,9 @@
   "companies": [
     {
       "id": 1,
-      "name": "Correos",
-      "direction": "Calle Real, 123",
-      "phone": "67584935",
+      "name": "Correus",
+      "direction": "Calle Irrrreal, 113",
+      "phone": "67584913",
       "postalCodes": [
         15000,
         16000,

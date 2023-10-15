@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { CompaniesService } from '../../services/companies.service';
 import { Company } from '../../interfaces/companies.interface';
@@ -23,7 +24,8 @@ export class EditCompPageComponent implements OnInit {
   constructor(
     private companyService: CompaniesService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private snackbar: MatSnackBar
   ) {}
 
   get currentCompany(): Company {
@@ -51,13 +53,19 @@ export class EditCompPageComponent implements OnInit {
       this.companyService
         .updateCompany(this.currentCompany)
         .subscribe((company) => {
-          // Lógica adicional de actualización si es necesario
+          this.showSnackbar(`${company.name} actualizada!` );
         });
       return;
     }
     this.companyService.addCompany(this.currentCompany).subscribe((company) => {
-      // Lógica adicional de añadir si es necesario
+      this.router.navigate(['/panel/edit', company.id])
+      this.showSnackbar(`${company.name} creada!` );
     });
-    // this.compService.updateCompany()
+    
+  }
+  showSnackbar(message: string):void{
+    this.snackbar.open(message, 'Hecho',{
+      duration: 2500,
+    } )
   }
 }
