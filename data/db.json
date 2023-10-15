@@ -1,6 +1,12 @@
 {
   "companies": [
     {
+      "id": 1,
+      "name": "Correos",
+      "direction": "Calle Falsa, 123",
+      "phone": "645368412",
+      "postalCodes": [15000, 16000, 17000, 18000, 19000]
+    },{
       "id": 2,
       "name": "Seur",
       "direction": "Calle Hipotética, 123",

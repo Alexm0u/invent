@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { filter, switchMap, tap } from 'rxjs';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 
 import { CompaniesService } from '../../services/companies.service';
 import { Company } from '../../interfaces/companies.interface';
-import { switchMap } from 'rxjs';
 import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 
 @Component({
@@ -75,16 +75,28 @@ export class EditCompPageComponent implements OnInit {
       const dialogRef = this.dialog.open(ConfirmDialogComponent, {
         data: this.companyForm.value,
       });
+
+      dialogRef.afterClosed()
+      .pipe(
+        filter((result:boolean) => result ),
+        switchMap(()=> this.companyService.deleteCompanyById(this.currentCompany.id)),
+        filter((wasDeleted:boolean) => wasDeleted ),
+      )
+      
+      
+      .subscribe(() => {
+        this.router.navigate(['panel/companies']);
+      })
   
-      dialogRef.afterClosed().subscribe(result => {
-        if (!result) return;
-        this.companyService.deleteCompanyById(this.currentCompany.id)
-          .subscribe(wasDeleted => {
-            if (wasDeleted) 
-            this.router.navigate(['panel/companies']);
-          })
+      // dialogRef.afterClosed().subscribe(result => {
+      //   if (!result) return;
+      //   this.companyService.deleteCompanyById(this.currentCompany.id)
+      //     .subscribe(wasDeleted => {
+      //       if (wasDeleted) 
+      //       this.router.navigate(['panel/companies']);
+      //     })
         
-      });
+      // });
   }
   showSnackbar(message: string):void{
     this.snackbar.open(message, 'Hecho',{
