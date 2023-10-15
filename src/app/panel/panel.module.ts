@@ -15,6 +15,7 @@ import { CompaniesListComponent } from './components/companies-list/companies-li
 import { EditCompPageComponent } from './pages/edit-comp-page/edit-comp-page.component';
 import { AddCompPageComponent } from './pages/add-comp-page/add-comp-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CompaniesListComponent,
     EditCompPageComponent,
     AddCompPageComponent,
+    ConfirmDialogComponent,
   ],
   imports: [
     CommonModule,

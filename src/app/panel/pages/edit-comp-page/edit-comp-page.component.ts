@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
 
 import { CompaniesService } from '../../services/companies.service';
 import { Company } from '../../interfaces/companies.interface';
 import { switchMap } from 'rxjs';
+import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-edit-comp-page',
@@ -25,7 +28,8 @@ export class EditCompPageComponent implements OnInit {
     private companyService: CompaniesService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private dialog: MatDialog,
   ) {}
 
   get currentCompany(): Company {
@@ -62,6 +66,25 @@ export class EditCompPageComponent implements OnInit {
       this.showSnackbar(`${company.name} creada!` );
     });
     
+  }
+
+  onDeleteCompany(){
+    if (!this.currentCompany.id) throw Error('Se requiere una ID de empresa de transporte');
+
+    
+      const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+        data: this.companyForm.value,
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        if (!result) return;
+        this.companyService.deleteCompanyById(this.currentCompany.id)
+          .subscribe(wasDeleted => {
+            if (wasDeleted) 
+            this.router.navigate(['panel/companies']);
+          })
+        
+      });
   }
   showSnackbar(message: string):void{
     this.snackbar.open(message, 'Hecho',{

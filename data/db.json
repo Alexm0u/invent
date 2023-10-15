@@ -1,20 +1,6 @@
 {
   "companies": [
     {
-      "id": 1,
-      "name": "Correus",
-      "direction": "Calle Irrrreal, 113",
-      "phone": "67584913",
-      "postalCodes": [
-        15000,
-        16000,
-        17000,
-        18000,
-        19000
-      ],
-      "shippingCompany": "Correos"
-    },
-    {
       "id": 2,
       "name": "Seur",
       "direction": "Calle Hipotética, 123",
@@ -95,28 +81,12 @@
   ],
   "sends": [
     {
-      "id": 1,
-      "packageType": 2,
-      "weight": 0.15,
-      "recipient": "Recipient 1",
-      "destinationPostalCode": 15000,
-      "companyId": 1
-    },
-    {
       "id": 2,
       "packageType": 4,
       "weight": 7.5,
       "recipient": "Recipient 2",
       "destinationPostalCode": 22000,
       "companyId": 2
-    },
-    {
-      "id": 3,
-      "packageType": 1,
-      "weight": 0.05,
-      "recipient": "Recipient 3",
-      "destinationPostalCode": 18000,
-      "companyId": 1
     },
     {
       "id": 4,

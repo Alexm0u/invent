@@ -31,7 +31,7 @@
           </div>
         </form>
         <div class="flex justify-content-between">
-            <button *ngIf="currentCompany.id" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button>
+            <button *ngIf="currentCompany.id" (click)="onDeleteCompany()" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button>
         <span></span>
         <button mat-flat-button color="primary" (click)="onSubmit()"><mat-icon>save</mat-icon>Guardar</button>
         </div>
