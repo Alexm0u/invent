@@ -34,13 +34,6 @@
       "phone": "Usan telégrafo",
       "direction": "Calle Falsa, 123",
       "postalCodes": []
-    },
-    {
-      "id": 4,
-      "name": "Carmenship",
-      "direction": "Rusafa 34",
-      "phone": "657890123",
-      "postalCodes": "98004"
     }
   ],
   "packageTypes": [

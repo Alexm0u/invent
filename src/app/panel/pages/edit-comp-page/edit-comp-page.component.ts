@@ -9,7 +9,7 @@ import { Company } from '../../interfaces/companies.interface';
   styles: [],
 })
 export class EditCompPageComponent {
-  public compForm = new FormGroup({
+  public companyForm = new FormGroup({
     id: new FormControl<number>(0),
     name: new FormControl<string>(''),
     direction: new FormControl<string>(''),
@@ -17,27 +17,29 @@ export class EditCompPageComponent {
     postalCodes: new FormControl<number[]>([]),
   });
 
-  constructor(private compService: CompaniesService) {}
+  constructor(private companyService: CompaniesService) {}
 
-  get currentComp(): Company {
-    const comp = this.compForm.value as Company;
-    return comp;
+  get currentCompany(): Company {
+    const company = this.companyForm.value as Company;
+    return company;
   }
 
   onSubmit(): void {
-    if (this.compForm.invalid) return;
+    if (this.companyForm.invalid) return;
 
-    if (this.currentComp.id) {
-      this.compService.updateCompany(this.currentComp)
-        .subscribe(comp => {
-
+    if (this.currentCompany.id) {
+      console.log('Company ID:', this.currentCompany.id); // Agrega el console.log aquí
+      this.companyService.updateCompany(this.currentCompany)
+        .subscribe(company => {
+            // Lógica adicional de actualización si es necesario
         });
         return;
     }
-    this.compService.addCompany(this.currentComp)
-      .subscribe(comp => {
-        // navegar a companies
-      })
+    this.companyService.addCompany(this.currentCompany)
+      .subscribe(company => {
+        // Lógica adicional de añadir si es necesario
+      });
     // this.compService.updateCompany()
   }
+
 }
