@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Error404pageComponent } from './shared/pages/error404page/error404page.component';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -11,6 +12,8 @@ const routes: Routes = [
     path: 'panel',
     loadChildren: () =>
       import('./panel/panel.module').then((m) => m.PanelModule),
+      canActivate: [AuthGuard],
+      canMatch: [AuthGuard]
   },
   {
     path: '404',
