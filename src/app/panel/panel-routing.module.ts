@@ -5,9 +5,8 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { SendsPageComponent } from './pages/send-page/send-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { PanelPageComponent } from './pages/panel-page/panel-page.component';
-import { LoginPageComponent } from '../auth/pages/login-page/login-page.component';
 import { EditCompPageComponent } from './pages/edit-comp-page/edit-comp-page.component';
-import { AddCompPageComponent } from './pages/add-comp-page/add-comp-page.component';
+import { NewSendComponent } from './pages/new-send/new-send.component';
 
 const routes: Routes = [
   {
@@ -36,7 +35,7 @@ const routes: Routes = [
       },
       {
         path: 'new-send',
-        component:SendsPageComponent,
+        component:NewSendComponent,
       },
       {
         path: 'del-send',

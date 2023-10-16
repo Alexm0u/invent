@@ -1,5 +1,7 @@
 <h1>Listado de envíos</h1>
-<mat-divider></mat-divider>
+<div class="flex justify-content-center">
+  <button mat-flat-button mat-raised color="primary" routerLink="/panel/new-send"><mat-icon>add</mat-icon>Crear</button>
+</div>
 
 <div class="grid mb-8 pt-2">
   <div *ngFor="let send of sends">

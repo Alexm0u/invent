@@ -3,10 +3,17 @@
     {
       "id": 1,
       "name": "Correos",
-      "direction": "Calle Falsa, 123",
-      "phone": "645368412",
-      "postalCodes": [15000, 16000, 17000, 18000, 19000]
-    },{
+      "direction": "Calle Falsa, 113",
+      "phone": "645368413",
+      "postalCodes": [
+        15000,
+        16000,
+        17000,
+        18000,
+        19000
+      ]
+    },
+    {
       "id": 2,
       "name": "Seur",
       "direction": "Calle Hipotética, 123",
@@ -88,40 +95,40 @@
   "sends": [
     {
       "id": 1,
-      "Adress": "False street, 123",
+      "address": "False street, 123",
       "destinationPostalCode": 15000,
-      "recievername": "Ralph Wiggum",
-      "sendername": "Hank Scorpio",
+      "recieverName": "Ralph Wiggum",
+      "senderName": "Hank Scorpio",
       "packageType": 2,
       "weight": 0.15,
       "companyId": 1
-    },{
+    },
+    {
       "id": 2,
-      "Adress": "False street, 123",
+      "address": "False street, 123",
       "destinationPostalCode": 22000,
-      "recievername": "Ralph Wiggum",
-      "sendername": "Hank Scorpio",
+      "recieverName": "Ralph Wiggum",
+      "senderName": "Hank Scorpio",
       "packageType": 4,
       "weight": 7.5,
       "companyId": 2
     },
     {
       "id": 3,
-      "Adress": "False street, 123",
+      "address": "False street, 123",
       "destinationPostalCode": 18000,
-      "recievername": "Ralph Wiggum",
-      "sendername": "Hank Scorpio",
+      "recieverName": "Ralph Wiggum",
+      "senderName": "Hank Scorpio",
       "packageType": 1,
       "weight": 0.05,
       "companyId": 1
     },
-  
     {
       "id": 4,
-      "Adress": "False street, 123",
+      "address": "False street, 123",
       "destinationPostalCode": 21000,
-      "recievername": "Ralph Wiggum",
-      "sendername": "Hank Scorpio",
+      "recieverName": "Ralph Wiggum",
+      "senderName": "Hank Scorpio",
       "packageType": 3,
       "weight": 3,
       "companyId": 2
@@ -129,9 +136,9 @@
     {
       "id": 5,
       "destinationPostalCode": 23000,
-      "Adress": "False street, 123",
-      "recievername": "Ralph Wiggum",
-      "sendername": "Hank Scorpio",
+      "address": "False street, 123",
+      "recieverName": "Ralph Wiggum",
+      "senderName": "Hank Scorpio",
       "packageType": 5,
       "weight": 20,
       "companyId": 3

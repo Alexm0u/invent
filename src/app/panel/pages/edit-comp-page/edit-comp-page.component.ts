@@ -88,15 +88,6 @@ export class EditCompPageComponent implements OnInit {
         this.router.navigate(['panel/companies']);
       })
   
-      // dialogRef.afterClosed().subscribe(result => {
-      //   if (!result) return;
-      //   this.companyService.deleteCompanyById(this.currentCompany.id)
-      //     .subscribe(wasDeleted => {
-      //       if (wasDeleted) 
-      //       this.router.navigate(['panel/companies']);
-      //     })
-        
-      // });
   }
   showSnackbar(message: string):void{
     this.snackbar.open(message, 'Hecho',{

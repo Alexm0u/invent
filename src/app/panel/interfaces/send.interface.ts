@@ -1,6 +1,6 @@
 export interface Send {
   id:                       number;
-  adress:                   string;
+  address:                  string;
   destinationPostalCode:    number;
   recievername:             string;
   sendername:               string;

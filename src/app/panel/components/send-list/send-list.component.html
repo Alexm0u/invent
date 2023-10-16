@@ -1,8 +1,31 @@
-<mat-list>
-    <mat-list-item>
-      <span matListItemTitle>ID: {{send.id}}</span>
-      <span matListItemLine>Tipo de paquete: {{send.packageType}}</span>
-      <span matListItemLine>Peso: {{send.weight}}</span>
-      <span matListItemLine>Código Postal: {{send.destinationPostalCode}}</span>
-      <span matListItemLine>Empresa transporte: {{send.companyId}}</span>
-    </mat-list-item>
+<div class="p-grid p-dir-col">
+  <mat-card class="example-card">
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          <span matListItemTitle>Nº ENVÍO: {{ send.id }}</span>
+          <span matListItemLine>Dirección: {{ send.address }}</span>
+          <span matListItemLine
+            >Código Postal: {{ send.destinationPostalCode }}</span
+          >
+          <span matListItemLine
+            >Nombre del destinatario: {{ send.recievername }}</span
+          >
+          <span matListItemLine
+            >Nombre del remitente: {{ send.sendername }}</span
+          >
+          <span matListItemLine>Tipo de paquete: {{ send.packageType }}</span>
+          <span matListItemLine>Peso: {{ send.weight }}</span>
+          <span matListItemLine
+            >Empresa de transporte: {{ send.companyId }}</span
+          >
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <div class="flex justify-content-between">
+      <!-- <button *ngIf="currentSend.id" (click)="onDeleteSend()" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button> -->
+  <span></span>
+  
+  </div>
+  </mat-card>
+</div>
