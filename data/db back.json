@@ -86,44 +86,55 @@
     }
   ],
   "shipments": [
+    
     {
       "id": 1,
+      "Adress": "False street, 123",
+      "destinationPostalCode": 15000,
+      "recievername": "Ralph Wiggum",
+      "sendername": "Hank Scorpio",
       "packageType": 2,
       "weight": 0.15,
-      "recipient": "Recipient 1",
-      "destinationPostalCode": 15000,
       "companyId": 1
-    },
-    {
+    },{
       "id": 2,
+      "Adress": "False street, 123",
+      "destinationPostalCode": 22000,
+      "recievername": "Ralph Wiggum",
+      "sendername": "Hank Scorpio",
       "packageType": 4,
       "weight": 7.5,
-      "recipient": "Recipient 2",
-      "destinationPostalCode": 22000,
       "companyId": 2
     },
     {
       "id": 3,
+      "Adress": "False street, 123",
+      "destinationPostalCode": 18000,
+      "recievername": "Ralph Wiggum",
+      "sendername": "Hank Scorpio",
       "packageType": 1,
       "weight": 0.05,
-      "recipient": "Recipient 3",
-      "destinationPostalCode": 18000,
       "companyId": 1
     },
+  
     {
       "id": 4,
-      "packageType": 3,
-      "weight": 3.0,
-      "recipient": "Recipient 4",
+      "Adress": "False street, 123",
       "destinationPostalCode": 21000,
+      "recievername": "Ralph Wiggum",
+      "sendername": "Hank Scorpio",
+      "packageType": 3,
+      "weight": 3,
       "companyId": 2
     },
     {
       "id": 5,
-      "packageType": 5,
-      "weight": 20.0,
-      "recipient": "Recipient 5",
       "destinationPostalCode": 23000,
+      "Adress": "False street, 123",
+      "recievername": "Ralph Wiggum",
+      "sendername": "Hank Scorpio",
+      "packageType": 5,
+      "weight": 20,
       "companyId": 3
     }
   ]
