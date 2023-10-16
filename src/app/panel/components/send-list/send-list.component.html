@@ -23,7 +23,7 @@
       </mat-list>
     </mat-card-content>
     <div class="flex justify-content-between">
-      <!-- <button *ngIf="currentSend.id" (click)="onDeleteSend()" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button> -->
+      <button mat-button mat-raised color="primary" [routerLink]="['/panel/new-send', send.id]"><mat-icon>open_in_new</mat-icon>Mas Info</button>
   <span></span>
   
   </div>

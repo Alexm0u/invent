@@ -26,7 +26,7 @@ export class NewSendComponent implements OnInit {
   });
 
   constructor(
-    private sendService: SendService,
+    public sendService: SendService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private snackbar: MatSnackBar,

@@ -38,10 +38,6 @@ const routes: Routes = [
         component:NewSendComponent,
       },
       {
-        path: 'del-send',
-        component:SendsPageComponent,
-      },
-      {
         path: 'users',
         component: UsersPageComponent,
       },
