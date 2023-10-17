@@ -51,14 +51,13 @@ export class NewSendComponent implements OnInit {
       });
   }
   onSubmit(): void {
-    console.log({formIsValid: this.sendForm.valid, value: this.sendForm
-    })
-    // if (this.sendForm.invalid) return;
+    
+    if (this.sendForm.invalid) return;
 
-    // this.sendService.addSend(this.currentSend).subscribe((send) => {
-    //   this.router.navigate(['/panel/send', send.id])
-    //   this.showSnackbar(`Envío número ${send.id} creado!` );
-    // });
+    this.sendService.addSend(this.currentSend).subscribe((send) => {
+      this.router.navigate(['/panel/send', send.id])
+      this.showSnackbar(`Envío número ${send.id} creado!` );
+    });
     
   }
 

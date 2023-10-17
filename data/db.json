@@ -32,7 +32,9 @@
       "name": "Invent",
       "phone": "Usan telégrafo",
       "direction": "Calle Falsa, 123",
-      "postalCodes": [""]
+      "postalCodes": [
+        ""
+      ]
     }
   ],
   "packageTypes": [
@@ -161,6 +163,16 @@
       "senderName": "Tequilla",
       "packageType": 0,
       "weight": 1,
+      "companyId": 0
+    },
+    {
+      "id": 8,
+      "address": "",
+      "destinationPostalCode": 46513,
+      "recieverName": "Profesor X",
+      "senderName": "Batman",
+      "packageType": 0,
+      "weight": 5,
       "companyId": 0
     }
   ]
