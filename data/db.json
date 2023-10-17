@@ -147,32 +147,22 @@
     },
     {
       "id": 6,
-      "address": "Falsisima 1234",
-      "destinationPostalCode": "99999",
-      "recieverName": "German",
-      "senderName": "Tequilla",
+      "address": "",
+      "destinationPostalCode": 1,
+      "recieverName": "otra vez",
+      "senderName": "a ver que pasa",
       "packageType": 0,
-      "weight": 1,
+      "weight": 13,
       "companyId": 0
     },
     {
       "id": 7,
-      "address": "Falsisima 1234",
-      "destinationPostalCode": "99999",
-      "recieverName": "German",
-      "senderName": "Tequilla",
+      "address": "",
+      "destinationPostalCode": 111,
+      "recieverName": "DEFINITIVA",
+      "senderName": "DE CREAR ENVIO",
       "packageType": 0,
       "weight": 1,
-      "companyId": 0
-    },
-    {
-      "id": 8,
-      "address": "",
-      "destinationPostalCode": 46513,
-      "recieverName": "Profesor X",
-      "senderName": "Batman",
-      "packageType": 0,
-      "weight": 5,
       "companyId": 0
     }
   ]

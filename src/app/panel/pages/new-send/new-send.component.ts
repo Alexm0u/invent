@@ -55,7 +55,7 @@ export class NewSendComponent implements OnInit {
     if (this.sendForm.invalid) return;
 
     this.sendService.addSend(this.currentSend).subscribe((send) => {
-      this.router.navigate(['/panel/send', send.id])
+      this.router.navigate(['/panel/send'])
       this.showSnackbar(`Envío número ${send.id} creado!` );
     });
     
