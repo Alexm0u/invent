@@ -21,7 +21,7 @@ export class EditCompPageComponent implements OnInit {
     name: new FormControl<string>(''),
     direction: new FormControl<string>(''),
     phone: new FormControl<string>(''),
-    postalCodes: new FormControl<number[]>([]),
+    postalCodes: new FormControl<string[]>([]),
   });
 
   constructor(

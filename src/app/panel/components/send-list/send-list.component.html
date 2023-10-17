@@ -4,26 +4,24 @@
       <mat-list>
         <mat-list-item>
           <span matListItemTitle>Nº ENVÍO: {{ send.id }}</span>
-          <span matListItemLine>Dirección: {{ send.address }}</span>
+          <span matListItemLine>{{ send.address }}</span>
           <span matListItemLine
             >Código Postal: {{ send.destinationPostalCode }}</span
           >
           <span matListItemLine
-            >Nombre del destinatario: {{ send.recievername }}</span
+            >DEST: {{ send.recieverName }}</span
           >
           <span matListItemLine
-            >Nombre del remitente: {{ send.sendername }}</span
+            >REM: {{ send.senderName }}</span
           >
           <span matListItemLine>Tipo de paquete: {{ send.packageType }}</span>
-          <span matListItemLine>Peso: {{ send.weight }}</span>
-          <span matListItemLine
-            >Empresa de transporte: {{ send.companyId }}</span
-          >
+          <span matListItemLine>Peso: {{ send.weight }} Kg</span>
+          
         </mat-list-item>
       </mat-list>
     </mat-card-content>
     <div class="flex justify-content-between">
-      <button mat-button mat-raised color="primary" [routerLink]="['/panel/new-send', send.id]"><mat-icon>open_in_new</mat-icon>Mas Info</button>
+      <button mat-button mat-raised color="primary" [routerLink]="['panel/new-send', send.id]"><mat-icon>open_in_new</mat-icon>Mas Info</button>
   <span></span>
   
   </div>

@@ -17,7 +17,7 @@ export class NewSendComponent implements OnInit {
   public sendForm = new FormGroup({
     id:                       new FormControl<number>(0),
     address:                  new FormControl<string>(''),
-    destinationPostalCode:    new FormControl<number>(0),
+    destinationPostalCode:    new FormControl<string>(''),
     recieverName:             new FormControl<string>(''),
     senderName:               new FormControl<string>(''),
     packageType:              new FormControl<number>(0),
@@ -26,7 +26,7 @@ export class NewSendComponent implements OnInit {
   });
 
   constructor(
-    public sendService: SendService,
+    private sendService: SendService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private snackbar: MatSnackBar,
@@ -51,12 +51,14 @@ export class NewSendComponent implements OnInit {
       });
   }
   onSubmit(): void {
-    if (this.sendForm.invalid) return;
+    console.log({formIsValid: this.sendForm.valid, value: this.sendForm
+    })
+    // if (this.sendForm.invalid) return;
 
-    this.sendService.addSend(this.currentSend).subscribe((send) => {
-      this.router.navigate(['/panel/send', send.id])
-      this.showSnackbar(`Envío número ${send.id} creado!` );
-    });
+    // this.sendService.addSend(this.currentSend).subscribe((send) => {
+    //   this.router.navigate(['/panel/send', send.id])
+    //   this.showSnackbar(`Envío número ${send.id} creado!` );
+    // });
     
   }
 

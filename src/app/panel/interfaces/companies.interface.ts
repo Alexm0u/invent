@@ -3,7 +3,7 @@ export interface Company {
     name:            string;
     direction:       string;
     phone:           string;
-    postalCodes:     number[];
+    postalCodes:     string[];
 }
 
 export enum ShipComp {

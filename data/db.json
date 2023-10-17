@@ -6,11 +6,11 @@
       "direction": "Calle Falsa, 113",
       "phone": "645368413",
       "postalCodes": [
-        15000,
-        16000,
-        17000,
-        18000,
-        19000
+        "15000",
+        "16000",
+        "17000",
+        "18000",
+        "19000"
       ]
     },
     {
@@ -19,12 +19,12 @@
       "direction": "Calle Hipotética, 123",
       "phone": "645768421",
       "postalCodes": [
-        20000,
-        21000,
-        22000,
-        23000,
-        24000,
-        25000
+        "20000",
+        "21000",
+        "22000",
+        "23000",
+        "24000",
+        "25000"
       ]
     },
     {
@@ -32,7 +32,7 @@
       "name": "Invent",
       "phone": "Usan telégrafo",
       "direction": "Calle Falsa, 123",
-      "postalCodes": []
+      "postalCodes": [""]
     }
   ],
   "packageTypes": [
@@ -96,7 +96,7 @@
     {
       "id": 1,
       "address": "False street, 123",
-      "destinationPostalCode": 15000,
+      "destinationPostalCode": "15000",
       "recieverName": "Ralph Wiggum",
       "senderName": "Hank Scorpio",
       "packageType": 2,
@@ -106,7 +106,7 @@
     {
       "id": 2,
       "address": "False street, 123",
-      "destinationPostalCode": 22000,
+      "destinationPostalCode": "22000",
       "recieverName": "Ralph Wiggum",
       "senderName": "Hank Scorpio",
       "packageType": 4,
@@ -116,7 +116,7 @@
     {
       "id": 3,
       "address": "False street, 123",
-      "destinationPostalCode": 18000,
+      "destinationPostalCode": "18000",
       "recieverName": "Ralph Wiggum",
       "senderName": "Hank Scorpio",
       "packageType": 1,
@@ -126,7 +126,7 @@
     {
       "id": 4,
       "address": "False street, 123",
-      "destinationPostalCode": 21000,
+      "destinationPostalCode": "21000",
       "recieverName": "Ralph Wiggum",
       "senderName": "Hank Scorpio",
       "packageType": 3,
@@ -135,7 +135,7 @@
     },
     {
       "id": 5,
-      "destinationPostalCode": 23000,
+      "destinationPostalCode": "23000",
       "address": "False street, 123",
       "recieverName": "Ralph Wiggum",
       "senderName": "Hank Scorpio",
@@ -146,7 +146,7 @@
     {
       "id": 6,
       "address": "Falsisima 1234",
-      "destinationPostalCode": 99999,
+      "destinationPostalCode": "99999",
       "recieverName": "German",
       "senderName": "Tequilla",
       "packageType": 0,
@@ -156,7 +156,7 @@
     {
       "id": 7,
       "address": "Falsisima 1234",
-      "destinationPostalCode": 99999,
+      "destinationPostalCode": "99999",
       "recieverName": "German",
       "senderName": "Tequilla",
       "packageType": 0,
