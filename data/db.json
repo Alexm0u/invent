@@ -144,26 +144,6 @@
       "packageType": 5,
       "weight": 20,
       "companyId": 3
-    },
-    {
-      "id": 6,
-      "address": "",
-      "destinationPostalCode": 1,
-      "recieverName": "otra vez",
-      "senderName": "a ver que pasa",
-      "packageType": 0,
-      "weight": 13,
-      "companyId": 0
-    },
-    {
-      "id": 7,
-      "address": "",
-      "destinationPostalCode": 111,
-      "recieverName": "DEFINITIVA",
-      "senderName": "DE CREAR ENVIO",
-      "packageType": 0,
-      "weight": 1,
-      "companyId": 0
     }
   ]
 }

@@ -45,14 +45,14 @@
       </div>
     </form>
     <div>
-      <button mat-flat-button color="primary" (click)="onSubmit()">
-        <mat-icon>save</mat-icon>Guardar
+      <button *ngIf="!currentSend.id" mat-flat-button color="primary" (click)="onSubmit()">
+        <mat-icon>add</mat-icon>Crear envío
       </button>
     </div>
-    <div class="p-col-12">
-      <div>Tu empresa de transporte será:</div>
+    <div class="p-col-12 mt-3">
+      <div>La empresa de transporte será:</div>
       <div>El coste del envío es de:</div>
     </div>
+    <button *ngIf="currentSend.id" (click)="onDeleteSend()" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button>
   </mat-card-content>
 </mat-card>
-<pre>{{currentSend | json}}</pre>

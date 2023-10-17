@@ -39,7 +39,7 @@ export class NewSendComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (!this.router.url.includes('edit')) return;
+    if (!this.router.url.includes('del')) return;
 
     this.activatedRoute.params
       .pipe(switchMap(({ id }) => this.sendService.getSendsById(id)))
@@ -51,11 +51,10 @@ export class NewSendComponent implements OnInit {
       });
   }
   onSubmit(): void {
-    
     if (this.sendForm.invalid) return;
 
     this.sendService.addSend(this.currentSend).subscribe((send) => {
-      this.router.navigate(['/panel/send'])
+      this.router.navigate(['/panel/send', send.id])
       this.showSnackbar(`Envío número ${send.id} creado!` );
     });
     
