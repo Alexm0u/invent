@@ -7,4 +7,5 @@ export interface Send {
   packageType:              number;
   weight:                   number;
   companyId:                number;
+  price:                    number;
 }
