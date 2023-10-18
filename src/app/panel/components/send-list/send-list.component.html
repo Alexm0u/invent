@@ -16,14 +16,15 @@
           >
           <span matListItemLine>Tipo de paquete: {{ send.packageType }}</span>
           <span matListItemLine>Peso: {{ send.weight }} Kg</span>
-          <span matListItemLine>Peso: {{ send.price }} Kg</span>
+          <span matListItemLine>Precio {{ send.price }} €</span>
+          <span matListItemLine>Empresa transporte: {{ getCompanyNameFromId(send.companyId.toString()) }}</span>
           
         </mat-list-item>
       </mat-list>
     </mat-card-content>
     <div class="flex justify-content-between">
       <button mat-button mat-raised color="primary" [routerLink]="['/panel/del', send.id]"><mat-icon>open_in_new</mat-icon>Mas Info</button>
-  
+  <span></span>
   
   </div>
   </mat-card>

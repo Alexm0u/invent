@@ -12,6 +12,19 @@ export class SendListComponent implements OnInit{
     if (!this.send) throw Error('Se requiere la prop Send');
   }
   @Input()
-  public send!: Send
+  public send!: Send;
+
+  getCompanyNameFromId(companyId: string): string {
+    switch (companyId) {
+      case '1':
+        return 'Correos';
+      case '2':
+        return 'Seur';
+      case '3':
+        return 'Invent';
+      default:
+        return 'Desconocido';
+    }
+  }
 
 }
