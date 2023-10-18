@@ -4,7 +4,7 @@ import { User } from '../../interfaces/users.interface';
 @Component({
   selector: 'users-user-list',
   templateUrl: './user-list.component.html',
-  styleUrls: []
+  styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit{
   ngOnInit(): void {

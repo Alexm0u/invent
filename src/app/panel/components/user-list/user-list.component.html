@@ -1,7 +1,11 @@
-<mat-list>
-  <mat-list-item>
-    <span matListItemTitle>ID: {{user.id}}</span>
-    <span matListItemLine>Nombre: {{user.username}}</span>
-    <span matListItemLine>Email: {{user.email}}</span>
-    <span matListItemLine>Role: {{user.role}}</span>
-  </mat-list-item>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ user.username }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="mt-2">
+    <h1>ID: {{ user.id }}</h1>
+    <mat-card-subtitle>Contacto: {{ user.email }}</mat-card-subtitle>
+    <br>
+    <mat-card-subtitle>Rol: {{ user.role }}</mat-card-subtitle>
+  </mat-card-content>
+</mat-card>

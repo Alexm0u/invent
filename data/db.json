@@ -77,19 +77,19 @@
   "users": [
     {
       "id": 1,
-      "username": "Alex",
+      "username": "Alex Moya",
       "email": "alex@gmail.com",
       "role": "admin"
     },
     {
       "id": 2,
-      "username": "Jagger",
+      "username": "Jagger Sito",
       "email": "jagger@gmail.com",
       "role": "worker"
     },
     {
       "id": 3,
-      "username": "Moreno",
+      "username": "Moreno Cánido",
       "email": "moreno@gmail.com",
       "role": "worker"
     }
