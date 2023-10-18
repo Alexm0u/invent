@@ -12,10 +12,11 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 export class PanelPageComponent {
 
   public sidebarItems = [
-    { label: 'Tipos de paquete', icon: 'label', url: './list'},
-    { label: 'Admin/Trabajadores', icon: 'label', url: './users'},
-    { label: 'Envíos registrados', icon: 'label', url: './send'},
-    { label: 'Empresas externas transporte', icon: 'label', url: './companies'},
+    { label: 'Tipos de paquete', icon: 'description', url: './list'},
+    { label: 'Personal', icon: 'accessibility_new', url: './users'},
+    { label: 'Envíos', icon: 'flight_takeoff', url: './send'},
+    { label: 'Transporte', icon: 'commute', url: './companies'},
+    { label: 'Bienvenida', icon: 'home', url: './welcome'},
   ];
 
   constructor(private authService: AuthService,
