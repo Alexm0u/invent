@@ -159,17 +159,6 @@
       "weight": 10,
       "companyId": 3,
       "price": 135
-    },
-    {
-      "id": 8,
-      "address": "Valencia 2",
-      "destinationPostalCode": 46011,
-      "recieverName": "Carmen",
-      "senderName": "Alex",
-      "packageType": 0,
-      "weight": 2,
-      "companyId": 3,
-      "price": 20
     }
   ]
 }

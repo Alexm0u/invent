@@ -2,23 +2,18 @@
     display: flex;
     justify-content: center;
 }
-
 .anchor {
     margin-right: 10px;
+    color: white;
 }
+
 .large-icon {
     font-size: 24px;
     color: white;
-  }
-  .logo-container {
-    display: flex;
-    align-items: left;
 }
 
-.logo-image {
+.logo-container img {
     width: 100%;
     height: auto;
     margin-left: 20px;
 }
-
-  
