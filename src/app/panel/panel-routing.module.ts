@@ -7,6 +7,7 @@ import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { PanelPageComponent } from './pages/panel-page/panel-page.component';
 import { EditCompPageComponent } from './pages/edit-comp-page/edit-comp-page.component';
 import { NewSendComponent } from './pages/new-send/new-send.component';
+import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 
 const routes: Routes = [
   {
@@ -46,8 +47,12 @@ const routes: Routes = [
         component: UsersPageComponent,
       },
       {
+        path: 'welcome',
+        component: WelcomePageComponent,
+      },
+      {
         path: '**',
-        redirectTo: 'list',
+        redirectTo: 'welcome',
       }
     ],
   },
