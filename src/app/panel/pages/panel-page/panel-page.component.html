@@ -23,12 +23,12 @@
     </button>
     <span class="spacer"></span>
     <span>Hola {{user?.username}} !</span>
-    <button mat-button class="ml-auto mr-8" (click)="onLogout()">Logout</button>
+    <button mat-button class="ml-auto mr-8" (click)="onLogout()"><mat-icon>exit_to_app</mat-icon>Logout</button>
   </mat-toolbar>
 
   <div class="container p-2">
     <router-outlet></router-outlet>
-
   </div>
+  <app-footer></app-footer>
 </mat-sidenav-container>
 

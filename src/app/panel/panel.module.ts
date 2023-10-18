@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import { NewSendComponent } from './pages/new-send/new-send.component';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { WelcomePageComponent } from './pages/welcome-page/welcome-page.componen
     ConfirmDialogComponent,
     NewSendComponent,
     WelcomePageComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
