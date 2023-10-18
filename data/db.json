@@ -2,7 +2,7 @@
   "companies": [
     {
       "id": 1,
-      "name": "Correos",
+      "name": "Correosssss",
       "direction": "Calle Falsa, 113",
       "phone": "645368413",
       "postalCodes": [
@@ -118,17 +118,6 @@
       "price": 0
     },
     {
-      "id": 3,
-      "address": "False street, 123",
-      "destinationPostalCode": "18000",
-      "recieverName": "Ralph Wiggum",
-      "senderName": "Hank Scorpio",
-      "packageType": 1,
-      "weight": 0.05,
-      "companyId": 1,
-      "price": 0
-    },
-    {
       "id": 4,
       "address": "False street, 123",
       "destinationPostalCode": "21000",
@@ -170,6 +159,17 @@
       "weight": 10,
       "companyId": 3,
       "price": 135
+    },
+    {
+      "id": 8,
+      "address": "Valencia 2",
+      "destinationPostalCode": 46011,
+      "recieverName": "Carmen",
+      "senderName": "Alex",
+      "packageType": 0,
+      "weight": 2,
+      "companyId": 3,
+      "price": 20
     }
   ]
 }
