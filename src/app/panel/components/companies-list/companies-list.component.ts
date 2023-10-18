@@ -4,7 +4,7 @@ import { Company } from '../../interfaces/companies.interface';
 @Component({
   selector: 'company-companies-list',
   templateUrl: './companies-list.component.html',
-  styleUrls: []
+  styleUrls: ['./companies-list.component.css']
 })
 export class CompaniesListComponent implements OnInit{
   ngOnInit(): void {

@@ -1,6 +1,6 @@
-<h1>{{currentSend.id? 'Info' : 'Agregar'}} Envío</h1>
+<h1>{{currentSend.id? 'Info del' : 'Crear'}} envío</h1>
 <mat-divider class="mb-2"></mat-divider>
-
+<button mat-flat-button color="primary" class="mb-2" [routerLink]="['/panel/send']"><mat-icon>undo</mat-icon>Volver</button>
 <mat-card class="flex mb-4">
   <mat-card-content>
     <form
@@ -50,8 +50,8 @@
         <mat-icon>add</mat-icon>Crear envío
       </button>
     </div>
-    <div class="p-col-12 mt-3">
-      <div>La empresa de transporte será:{{company}}</div>
+    <div *ngIf="!currentSend.id" class="p-col-12 mt-3">
+      <div >La empresa de transporte será:{{company}}</div>
       <div>El coste del envío es de: {{precio}} </div>
     </div>
     <button *ngIf="currentSend.id" (click)="onDeleteSend()" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button>
