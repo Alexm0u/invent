@@ -4,7 +4,7 @@ import { Send } from '../../interfaces/send.interface';
 @Component({
   selector: 'sends-send-list',
   templateUrl: './send-list.component.html',
-  styles: [
+  styleUrls: ['./send-list.component.css'
   ]
 })
 export class SendListComponent implements OnInit{

@@ -8,23 +8,23 @@
           <span matListItemLine
             >Código Postal: {{ send.destinationPostalCode }}</span
           >
-          <span matListItemLine
-            >DEST: {{ send.recieverName }}</span
-          >
-          <span matListItemLine
-            >REM: {{ send.senderName }}</span
-          >
+          <span matListItemLine>DEST: {{ send.recieverName }}</span>
+          <span matListItemLine>REM: {{ send.senderName }}</span>
           <span matListItemLine>Tipo de paquete: {{ send.packageType }}</span>
           <span matListItemLine>Peso: {{ send.weight }} Kg</span>
           <span matListItemLine>Peso: {{ send.price }} Kg</span>
-          
         </mat-list-item>
       </mat-list>
     </mat-card-content>
-    <div class="flex justify-content-between">
-      <button mat-button mat-raised color="primary" [routerLink]="['/panel/del', send.id]"><mat-icon>open_in_new</mat-icon>Mas Info</button>
-  <span></span>
-  
-  </div>
+    <div>
+      <button
+        mat-button
+        mat-raised
+        color="primary"
+        [routerLink]="['/panel/del', send.id]"
+      >
+        <mat-icon>open_in_new</mat-icon>Mas Info
+      </button>
+    </div>
   </mat-card>
 </div>
