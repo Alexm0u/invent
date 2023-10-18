@@ -1,0 +1,35 @@
+.p-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .image:hover {
+    transform: scale(0.9);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text-container {
+    font-size: 16px;
+  }
+  
+  .text-container ul {
+    padding-left: 20px;
+    list-style-position: inside;
+  }
+  
+  .text-container ul li {
+    margin-bottom: 10px;
+  }
+  
+  
+  
