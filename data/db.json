@@ -78,8 +78,13 @@
     {
       "id": 1,
       "username": "Alex Moya",
+      "address": "No existe, 43",
+      "cityBased": "Valencia",
       "email": "alex@gmail.com",
       "role": "admin"
+      
+      
+
     },
     {
       "id": 2,

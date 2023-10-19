@@ -1,11 +1,12 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>{{ user.username }}</mat-card-title>
-  </mat-card-header>
-  <mat-card-content class="mt-2">
-    <h1>ID: {{ user.id }}</h1>
-    <mat-card-subtitle>Contacto: {{ user.email }}</mat-card-subtitle>
-    <br>
-    <mat-card-subtitle>Rol: {{ user.role }}</mat-card-subtitle>
+<mat-card class="fixed-size-card">
+  <mat-card-content class="card-content">
+    <h4 class="card-title">ID: {{ user.id }}</h4>
+    <p class="card-item">Nombre: {{ user.username }} </p>
+    <p class="card-item">Rol: {{ user.role }}</p>
+    <mat-divider class="divider"></mat-divider>
+    <h4 class="card-title">Datos personales:</h4>
+    <p class="card-item"> Dirección: {{ user.address }}</p>
+    <p class="card-item"> Ciudad: {{ user.address }}</p>
+    <p class="card-item"> Contacto: {{ user.email }}</p>
   </mat-card-content>
 </mat-card>
