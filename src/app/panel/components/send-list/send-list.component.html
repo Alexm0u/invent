@@ -1,0 +1,48 @@
+<mat-card class="fixed-size-card">
+  <div class="header-card">
+    <h4 class="header-card-title">Nº ENVÍO:</h4>
+    <h4 class="header-card-item">{{ send.id }}</h4>
+  </div>
+
+  <mat-divider></mat-divider>
+  <table class="card-table">
+    <tr>
+      <td><h4 class="card-title">Dirección de entrega:</h4></td>
+      <td>
+        <p class="card-item">{{ send.address }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td><h4 class="card-title">Código Postal:</h4></td>
+      <td>
+        <p class="card-item">{{ send.destinationPostalCode }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td><h4 class="card-title">Empresa transporte:</h4></td>
+      <td>
+        <p class="card-item">
+          {{ getCompanyNameFromId(send.companyId.toString()) }}
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><h4 class="card-title">Peso:</h4></td>
+      <td>
+        <p class="card-item">{{ send.weight }} Kg</p>
+      </td>
+    </tr>
+    <tr>
+      <td><h4 class="card-title">Precio:</h4></td>
+      <td>
+        <p class="card-item">{{ send.price }} €</p>
+      </td>
+    </tr>
+  </table>
+  <mat-divider></mat-divider>
+    <div class="button-container">
+      <button mat-button color="secondary" [routerLink]="['/panel/del', send.id]">
+        <mat-icon>notes</mat-icon>Mas Info
+      </button>
+    </div>
+</mat-card>

@@ -1,0 +1,59 @@
+<h1>{{currentSend.id? 'Info del' : 'Crear'}} envío</h1>
+<mat-divider class="mb-2"></mat-divider>
+<button mat-flat-button color="primary" class="mb-2" [routerLink]="['/panel/send']"><mat-icon>undo</mat-icon>Volver</button>
+<mat-card class="flex mb-4">
+  <mat-card-content>
+    <form
+      class="p-grid p-dir-col p-gap"
+      [formGroup]="sendForm"
+      (ngSubmit)="onSubmit()"
+    >
+    <div class="p-col-12">
+      <mat-form-field>
+        <mat-label>Dirección</mat-label>
+        <input matInput type="text" formControlName="address" required />
+      </mat-form-field>
+    </div>  
+    <div class="p-col-12">
+        <mat-form-field>
+          <mat-label>Código Postal</mat-label>
+          <input
+            matInput
+            type="number"
+            formControlName="destinationPostalCode"
+            (blur)="getCompanyName()"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="p-col-12">
+        <mat-form-field>
+          <mat-label>Destinatario</mat-label>
+          <input matInput type="text" formControlName="recieverName" required />
+        </mat-form-field>
+      </div>
+      <div class="p-col-12">
+        <mat-form-field>
+          <mat-label>Remitente</mat-label>
+          <input matInput type="text" formControlName="senderName" required />
+        </mat-form-field>
+      </div>
+      <div class="p-col-12">
+        <mat-form-field>
+          <mat-label>Peso</mat-label>
+          <input matInput type="number" formControlName="weight" required (blur)="getPrice()"/>
+        </mat-form-field>
+      </div>
+    </form>
+    <div>
+      <button *ngIf="!currentSend.id" mat-flat-button color="primary" (click)="onSubmit()">
+        <mat-icon>add</mat-icon>Crear envío
+      </button>
+    </div>
+    <div *ngIf="!currentSend.id" class="p-col-12 mt-3">
+      <div >La empresa de transporte será:{{company}}</div>
+      <div>El coste del envío es de: {{precio}} €</div>
+    </div>
+    <button *ngIf="currentSend.id" (click)="onDeleteSend()" mat-flat-button color="warn"><mat-icon>delete</mat-icon>Borrar</button>
+  </mat-card-content>
+</mat-card>

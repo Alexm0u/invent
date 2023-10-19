@@ -1,0 +1,74 @@
+.fixed-size-card {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 200px; 
+}
+
+.card-item {
+  margin: 5px 0;
+  text-align: right
+}
+
+.divider {
+  margin: 10px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+mat-divider{
+  width: 100%;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+.header-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(150, 148, 149);
+}
+
+.header-card-item {
+  margin-left: auto;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+}
+
+
+
+
+
+
+
+

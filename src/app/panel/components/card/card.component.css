@@ -1,0 +1,30 @@
+.fixed-size-card {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-item {
+  margin: 5px 0;
+}
+
+.divider {
+  margin: 10px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+}

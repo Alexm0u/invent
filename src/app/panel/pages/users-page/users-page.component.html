@@ -1,0 +1,8 @@
+<h1>Listado de Usuarios</h1>
+<mat-divider></mat-divider>
+
+<div class="grid mb-8 pt-2">
+  <div *ngFor="let user of users">
+    <users-user-list [user]="user"></users-user-list>
+  </div>
+</div>

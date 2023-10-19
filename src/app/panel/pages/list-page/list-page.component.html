@@ -1,0 +1,8 @@
+<h1>Listado de tipos de paquetes</h1>
+<mat-divider></mat-divider>
+
+<div class="grid mb-8 pt-2 justify-content-center">
+  <div *ngFor="let package of packages" class="p-2">
+    <packages-package-card [package]="package"></packages-package-card>
+  </div>
+</div>
