@@ -15,16 +15,5 @@ export class SendsPageComponent implements OnInit {
     this.sendService.getSends().subscribe((sends) => (this.sends = sends));
   
   }
-  getCompanyNameFromId(companyId: string): string {
-    switch (companyId) {
-      case '1':
-        return 'Correos';
-      case '2':
-        return 'Seur';
-      case '3':
-        return 'Invent';
-      default:
-        return 'Desconocido';
-    }
-  }
+  
 }

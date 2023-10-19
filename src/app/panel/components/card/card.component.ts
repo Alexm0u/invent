@@ -11,5 +11,7 @@ export class CardComponent implements OnInit{
     if (!this.package) throw Error('Se requiere la propiedad package');
   }
   @Input()
-  public package!: Package
+  public package!: Package;
+
+  displayedColumns: string[] = ['id', 'name', 'minWeight', 'maxWeight', 'priceFormula'];
 }
