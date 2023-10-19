@@ -1,28 +1,66 @@
 <div class="p-grid">
   <div class="p-col-12 mt-3">
-    <img
-      src="../../../../assets/img/welcome-page-guitar.jpg"
-      alt="Imagen"
-      class="image"
-    />
+    <div class="image-container">
+      <img
+        src="../../../../assets/img/welcome-page-guitar.jpg"
+        alt="Imagen"
+        class="image"
+      />
+    </div>
   </div>
   <div class="text-container">
     <h1>Bienvenido a mi App!</h1>
-    <p>
-      Las funcionalidades básicas de la App las encontrarás al pinchar en el
-      menú superior izquierdo. A pesar de ser una App de envíos, le he dado un
-      toque rock porque me apetecía hacer algo distinto y colorido.
-    </p>
-    <p>Las tecnologías usadas son:</p>
-    <ul>
-      <li>Angular</li>
-      <li>TypeScript</li>
-      <li>Angular Material</li>
-      <li>JSON-SERVER</li>
-      <li>Prime-Flex</li>
-      <li>CSS</li>
-    </ul>
-    <p>P.D: El hover de la imagen no hace nada, solo es para que se vea que sé hacerlo :D</p>
+    <div class="content-main">
+      <div class="content">
+        <h2>Sobre la App</h2>
+        <p>
+          Se trata de una app de logística para la gestión envíos y empresas de
+          transporte. Está conectada a un data.json con JSON.SERVER de donde
+          recibe toda la información. Según el código postal de destino asigna
+          automáticamente la empresa que se va a encargar del envío, también al
+          introducir el peso del paquete, calculará el coste del mismo para el
+          cliente. Le he dado una temática Algo Rock y colorida para romper con
+          la rutina de utilizar siempre colores neutros o suaves, está hecha a
+          mi gusto (Acertado o no) aunque en esencia es un tema de Angular
+          Material.
+        </p>
+        <h2>Funcionalidades</h2>
+        <ul>
+          <li>Consultar los tipos de paquetes</li>
+          <li>Consultar el personal de la empresa y su rol en la misma</li>
+          <li>Crear, consultar y borrar envíos</li>
+          <li>Crear, consultar, actualizar y borrar empresas de transporte</li>
+        </ul>
+        <p>
+          También tiene otras funcionalidades(Guards) que obligan a acceder a
+          través de "LogIn" para ver el contenido de la App. Se han separado los
+          componentes de los Layouts, donde son llamados y mostrados a través de
+          un mapeo.
+        </p>
+        <p>
+          En las secciones de envíos y transporte, gracias a los condicionales
+          de Angular, se muestran contenidos dependiendo de si editas o agregas
+          una empresa o envío.
+        </p>
+        <h2>Tecnologías utilizadas:</h2>
+        <ul>
+          <li>Angular v16 con TypeScript</li>
+          <li>Angular Material</li>
+          <li>JSON.SERVER</li>
+          <li>Prime Flex</li>
+          <li>CSS</li>
+        </ul>
+        <p>
+          La aplicación sigue en desarrollo, por lo que cualquier sugerencia
+          será super bien recibida! Por cierto, el hover de la imagen no hace
+          nada, es solo una muestra de que sé hacerlo y de que me encantan los
+          Foo Fighters :)
+        </p>
+        <p>
+          *Easter egg: El logo de la empresa de transporte lleva un mensaje
+          debajo de su nombre.
+        </p>
+      </div>
+    </div>
   </div>
-  
 </div>
