@@ -1,32 +1,48 @@
 <mat-card class="fixed-size-card">
+  <div class="header-card">
+    <h4 class="card-title">Nº ENVÍO:</h4>
+    <h4 class="card-item">{{ send.id }}</h4>
+  </div>
+
+  <mat-divider></mat-divider>
   <table class="card-table">
     <tr>
-      <td><h4 class="card-title">Nº ENVÍO:</h4></td>
-      <td><h4 class="card-item">{{ send.id }}</h4></td>
-    </tr>
-    <tr>
       <td><h4 class="card-title">Dirección de entrega:</h4></td>
-      <td><p class="card-item">{{ send.address }}</p></td>
+      <td>
+        <p class="card-item">{{ send.address }}</p>
+      </td>
     </tr>
     <tr>
       <td><h4 class="card-title">Código Postal:</h4></td>
-      <td><p class="card-item">{{ send.destinationPostalCode }}</p></td>
+      <td>
+        <p class="card-item">{{ send.destinationPostalCode }}</p>
+      </td>
     </tr>
     <tr>
       <td><h4 class="card-title">Empresa transporte:</h4></td>
-      <td><p class="card-item">{{ getCompanyNameFromId(send.companyId.toString()) }}</p></td>
-    </tr>
-    <tr>
-      <td><h4 class="card-title">Tipo de paquete:</h4></td>
-      <td><p class="card-item">{{ send.packageType }}</p></td>
+      <td>
+        <p class="card-item">
+          {{ getCompanyNameFromId(send.companyId.toString()) }}
+        </p>
+      </td>
     </tr>
     <tr>
       <td><h4 class="card-title">Peso:</h4></td>
-      <td><p class="card-item">{{ send.weight }} Kg</p></td>
+      <td>
+        <p class="card-item">{{ send.weight }} Kg</p>
+      </td>
     </tr>
     <tr>
       <td><h4 class="card-title">Precio:</h4></td>
-      <td><p class="card-item">{{ send.price }} €</p></td>
+      <td>
+        <p class="card-item">{{ send.price }} €</p>
+      </td>
     </tr>
   </table>
+  <mat-divider></mat-divider>
+    <div class="button-container">
+      <button mat-button color="primary" [routerLink]="['/panel/edit', send.id]">
+        <mat-icon>edit</mat-icon>Editar
+      </button>
+    </div>
 </mat-card>

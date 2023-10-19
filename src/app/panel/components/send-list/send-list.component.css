@@ -14,12 +14,13 @@
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
-  text-align: left; /* Alinea el texto a la izquierda */
-  width: 200px; /* Ancho fijo para la alineación fijada */
+  text-align: left;
+  width: 200px; 
 }
 
 .card-item {
   margin: 5px 0;
+  text-align: right
 }
 
 .divider {
@@ -30,5 +31,18 @@
   display: flex;
   justify-content: flex-end;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+mat-divider{
+  width: 100%;
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+}
+
+
+
 
 
