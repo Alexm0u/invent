@@ -1,32 +1,30 @@
-mat-card {
-  border: 1px solid rgb(247, 3, 194);
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.fixed-size-card {
+  width: 400px;
+  height: auto;
+  padding: 20px;
   margin: 20px;
 }
 
-mat-card-header {
-  background-color: grey;
-  border-bottom: 1px solid rgb(247, 3, 194);
-  padding: 10px;
-  justify-content: center;
+.card-content {
+  display: flex;
+  flex-direction: column;
 }
 
-mat-card-title {
-  font-size: 24px;
-  margin: 0;
-}
-
-mat-card-content {
-  padding: 20px;
-}
-
-h1 {
+.card-title {
   font-size: 20px;
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-mat-card-subtitle {
-  font-size: 16px;
-  color: #666;
+.card-item {
+  margin: 5px 0;
+}
+
+.divider {
+  margin: 10px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
 }

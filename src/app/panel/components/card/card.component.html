@@ -1,4 +1,4 @@
-<mat-card>
+<!-- <mat-card>
   <mat-card-header>
     <mat-card-title> {{ package.name }} </mat-card-title>
   </mat-card-header>
@@ -7,7 +7,14 @@
     <mat-card-subtitle>Mínimo  {{ package.minWeight }} Kg</mat-card-subtitle>
 <mat-card-subtitle>Máximo {{ package.maxWeight }} Kg</mat-card-subtitle>
   </mat-card-content>
+</mat-card> -->
+
+<mat-card class="fixed-size-card">
+  <mat-card-content class="card-content">
+    <h4 class="card-title">{{ package.name }}</h4>
+    <p class="card-item">Mínimo  {{ package.minWeight }} Kg</p>
+    <p class="card-item">Máximo {{ package.maxWeight }} Kg</p>
+  </mat-card-content>
+  <mat-divider class="divider"></mat-divider>
 </mat-card>
-
-
 

@@ -62,7 +62,7 @@ export class EditCompPageComponent implements OnInit {
       return;
     }
     this.companyService.addCompany(this.currentCompany).subscribe((company) => {
-      this.router.navigate(['/panel/companies'])
+      this.router.navigate(['panel/companies']);
       this.showSnackbar(`${company.name} creada!` );
     });
     
