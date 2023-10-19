@@ -38,9 +38,35 @@
 }
 mat-divider{
   width: 100%;
-  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
-  margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+  margin-top: 10px; 
+  margin-bottom: 10px;
 }
+.header-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(150, 148, 149);
+}
+
+.header-card-item {
+  margin-left: auto;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+}
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 <mat-card class="fixed-size-card">
   <div class="header-card">
-    <h4 class="card-title">Nº ENVÍO:</h4>
-    <h4 class="card-item">{{ send.id }}</h4>
+    <h4 class="header-card-title">Nº ENVÍO:</h4>
+    <h4 class="header-card-item">{{ send.id }}</h4>
   </div>
 
   <mat-divider></mat-divider>
@@ -41,7 +41,7 @@
   </table>
   <mat-divider></mat-divider>
     <div class="button-container">
-      <button mat-button color="primary" [routerLink]="['/panel/edit', send.id]">
+      <button mat-button [routerLink]="['/panel/del', send.id]">
         <mat-icon>edit</mat-icon>Editar
       </button>
     </div>
